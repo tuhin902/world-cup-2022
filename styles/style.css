@@ -20,6 +20,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+
 }
 
 /* -----------------
@@ -27,20 +28,20 @@ main {
  ------------- */
 
 .top-container {
-    width: 100%;
-
-
+    width: 90%;
 }
 
 .top-banner {
     display: flex;
     background-color: #161616;
-    margin: 50px auto;
-    width: 1321px;
-    height: 646px;
+    margin-top: 50px;
+    margin-bottom: 135px;
+    padding-top: 78px;
+    padding-left: 109px;
     justify-content: center;
     align-items: center;
     border-radius: 30px;
+
 }
 
 .banner-title {
@@ -77,4 +78,118 @@ main {
 
 .banner-img img {
     width: 80%;
+}
+
+/* ---------------
+ middle banner styles
+-------------------- */
+.middle-container {
+    width: 90%;
+}
+
+.middle-banner {
+    display: flex;
+    width: 50%;
+}
+
+.side-blogs {
+    width: 312px;
+    height: 312px;
+    background: #161616;
+    border-radius: 10px;
+    padding: 25px 28px;
+    margin-right: 22px;
+
+}
+
+.bac-white {
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    padding: 17px 39px;
+    margin: 30px 0;
+    text-align: center;
+}
+
+.bac-red {
+    background-color: #DD0000;
+    border-radius: 10px;
+    padding: 17px 39px;
+    margin: 30px 0;
+    text-align: center;
+}
+
+.blogs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 24px;
+}
+
+.blog {
+    border: 2px solid lightslategray;
+    /* width: 312px;
+    height: 362px; */
+    border-radius: 5px;
+    margin-bottom: 24px;
+}
+
+.blog-img {
+    margin-bottom: 20px;
+}
+
+.blog a {
+    color: #161616;
+    text-decoration: none;
+    border: 1px solid #161616;
+    margin-left: 20px;
+    padding: 4px 17px;
+    font-weight: 500;
+    font-size: 16px;
+    border-radius: 3px;
+}
+
+.blog p {
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 27px;
+    color: #161616;
+    margin: 15px 20px 20px 20px;
+
+
+}
+
+.footer {
+    background-color: #161616;
+    width: 100%;
+    height: 444px;
+
+}
+
+.footer h1 {
+    text-align: center;
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 60px;
+    margin-top: 130px;
+
+
+}
+
+.footer hr {
+    color: rgba(255, 255, 255, 0.1);
+    margin: 50px 140px;
+
+}
+
+.footer-span {
+    color: #B9B9B9;
+    text-align: center;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+
+}
+
+.footer-span span {
+    margin: 0 15px;
 }
