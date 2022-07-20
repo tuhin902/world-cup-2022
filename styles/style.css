@@ -34,6 +34,8 @@ main {
 .top-banner {
     display: flex;
     background-color: #161616;
+    width: 1321px;
+    height: 646px;
     margin-top: 50px;
     margin-bottom: 135px;
     padding-top: 78px;
@@ -89,7 +91,8 @@ main {
 
 .middle-banner {
     display: flex;
-    width: 50%;
+    width: 1318px;
+    height: 1134px;
 }
 
 .side-blogs {
@@ -121,6 +124,7 @@ main {
 .blogs {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    width: 50%;
     grid-column-gap: 24px;
 }
 
@@ -133,6 +137,8 @@ main {
 }
 
 .blog-img {
+    width: 312px;
+    height: 175px;
     margin-bottom: 20px;
 }
 
@@ -190,6 +196,12 @@ main {
 
 }
 
-.footer-span span {
+.social-icon {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.social-icon a {
     margin: 0 15px;
 }
