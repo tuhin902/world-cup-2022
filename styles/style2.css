@@ -1,0 +1,101 @@
+/* ---------------
+    Fonts styles
+---------------- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,700&family=Roboto&display=swap');
+
+/*--------------
+ css stylesheets
+ ------------------ */
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    background-color: #FFFFFF;
+
+}
+
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.container {
+    width: 100%;
+}
+
+
+.top-banner {
+    width: 80%;
+    margin-top: 50px;
+    margin-left: 100px;
+    transition: width 1s;
+
+}
+
+.top-banner:hover {
+    width: 70%;
+
+}
+
+.top-banner {
+    display: flex;
+    background-color: #161616;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    padding-top: 78px;
+    padding-left: 109px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+
+}
+
+
+.banner-info {
+    width: 531px;
+    height: 424px;
+}
+
+.banner-info h1 {
+    font-size: 70PX;
+    font-weight: 700;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+.banner-title {
+    transition: width 1s, transform 5s;
+}
+
+.banner-title:hover {
+    color: aqua;
+    transform: rotate(180deg);
+}
+
+.banner-info p {
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 400px;
+    line-height: 26px;
+    margin-bottom: 40px;
+}
+
+.banner-info a {
+    color: #FFFFFF;
+    background-color: #DD0000;
+    border-radius: 5px;
+    padding: 16px 25px;
+    text-decoration: none;
+}
+
+.banner-img {
+    width: 50%;
+}
+
+.banner-img img {
+    width: 100%;
+}
