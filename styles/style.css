@@ -29,13 +29,20 @@ main {
 
 .top-container {
     width: 90%;
+    transition: width 1s;
+
+}
+
+.top-container:hover {
+    width: 85%;
+
 }
 
 .top-banner {
     display: flex;
     background-color: #161616;
     margin-top: 50px;
-    margin-bottom: 135px;
+    margin-bottom: 30px;
     padding-top: 78px;
     padding-left: 109px;
     justify-content: center;
@@ -44,19 +51,28 @@ main {
 
 }
 
-.banner-title {
+.banner-info {
     width: 531px;
     height: 424px;
 }
 
-.banner-title h1 {
+.banner-info h1 {
     font-size: 70PX;
     font-weight: 700;
     color: #FFFFFF;
     margin-bottom: 20px;
 }
 
-.banner-title p {
+.banner-title {
+    transition: width 1s, transform 5s;
+}
+
+.banner-title:hover {
+    color: aqua;
+    transform: rotate(180deg);
+}
+
+.banner-info p {
     color: #FFFFFF;
     font-size: 16px;
     font-weight: 400px;
@@ -64,7 +80,7 @@ main {
     margin-bottom: 40px;
 }
 
-.banner-title a {
+.banner-info a {
     color: #FFFFFF;
     background-color: #DD0000;
     border-radius: 5px;
@@ -90,9 +106,14 @@ main {
 .middle-banner {
     display: flex;
     width: 50%;
+    margin-top: 100px;
     margin-left: 50px;
     margin-bottom: 100px;
 }
+
+/*------------
+ Side blog styles
+--------------- */
 
 .side-blogs {
     width: 312px;
@@ -119,6 +140,10 @@ main {
     margin: 30px 0;
     text-align: center;
 }
+
+/*--------------
+ Blogs styles
+---------------- */
 
 .blogs {
     display: grid;
