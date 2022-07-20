@@ -141,6 +141,11 @@ main {
     text-align: center;
 }
 
+.bac-white a {
+    text-decoration: none;
+    color: #161616;
+}
+
 .bac-red {
     background-color: #DD0000;
     border-radius: 10px;
@@ -265,6 +270,7 @@ main {
     ---------------------- */
     .container {
         width: 100%;
+        overflow-x: hidden;
     }
 
     .top-banner {
@@ -373,6 +379,7 @@ main {
 
     .container {
         width: 100%;
+        overflow-x: hidden;
     }
 
     /* -------------------
