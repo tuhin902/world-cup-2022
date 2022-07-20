@@ -3,6 +3,9 @@
 ---------------- */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,700&family=Roboto&display=swap');
 
+/*-----------
+ css styles
+-------------- */
 * {
     margin: 0;
     padding: 0;
@@ -17,23 +20,33 @@ body {
 }
 
 main {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
 
 }
 
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 /* -----------------
    Main styles
  ------------- */
 
-.top-container {
-    width: 90%;
+.top-banner {
+    width: 80%;
+    margin-top: 50px;
+    margin-left: 100px;
     transition: width 1s;
 
 }
 
-.top-container:hover {
+.top-banner:hover {
     width: 85%;
 
 }
@@ -93,19 +106,14 @@ main {
 }
 
 .banner-img img {
-    width: 80%;
+    width: 100%;
 }
 
 /* ---------------
  middle banner styles
 -------------------- */
-.middle-container {
-    width: 100%;
-}
-
 .middle-banner {
     display: flex;
-    width: 50%;
     margin-top: 100px;
     margin-left: 50px;
     margin-bottom: 100px;
@@ -116,19 +124,19 @@ main {
 --------------- */
 
 .side-blogs {
-    width: 312px;
+    width: 100%;
     height: 312px;
-    background: #161616;
+    background-color: #161616;
     border-radius: 10px;
     padding: 25px 28px;
-    margin-right: 22px;
+    margin: 0;
 
 }
 
 .bac-white {
     background-color: #FFFFFF;
     border-radius: 10px;
-    padding: 17px 39px;
+    padding: 10px 39px;
     margin: 30px 0;
     text-align: center;
 }
@@ -137,7 +145,6 @@ main {
     background-color: #DD0000;
     border-radius: 10px;
     padding: 17px 39px;
-    margin: 30px 0;
     text-align: center;
 }
 
@@ -150,7 +157,6 @@ main {
     grid-template-columns: repeat(3, 1fr);
     gap: 24px;
     margin-left: 2%;
-    width: 1312px 1134px;
 }
 
 .blog {
@@ -160,8 +166,6 @@ main {
 }
 
 .blog-img {
-    width: 312px;
-    height: 175px;
     margin-bottom: 20px;
 }
 
@@ -192,6 +196,10 @@ main {
     align-items: center;
     gap: 30px;
     margin-top: 20px;
+}
+
+.button {
+    visibility: hidden;
 }
 
 /*----------
@@ -227,8 +235,11 @@ main {
     text-align: center;
     font-weight: 500;
     font-size: 16px;
-    line-height: 24px;
 
+}
+
+.footer span {
+    padding: 0 15px;
 }
 
 .social-icon {
@@ -239,4 +250,212 @@ main {
 
 .social-icon a {
     margin: 0 15px;
+}
+
+/*--------------- 
+    Media queries 
+-------------------------*/
+/*----------------
+ Mobiled device
+------------------ */
+@media only screen and (max-width:688px) {
+
+    /* ----------------
+    Top banner responsive
+    ---------------------- */
+    .container {
+        width: 100%;
+    }
+
+    .top-banner {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 334px;
+        height: 412px;
+        margin: 0 auto;
+        padding: 0;
+        border-radius: 10px;
+    }
+
+    .banner-info {
+        width: 258px;
+        height: 178px;
+        margin: 0;
+    }
+
+    .banner-img {
+        width: 50%;
+    }
+
+    .banner-info h1 {
+        font-size: 22px;
+        margin-top: 28px;
+    }
+
+    .banner-info p {
+        font-size: 14px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    /* -----------------
+    Middle banner responsive 
+    --------------------*/
+
+    .middle-banner {
+        display: flex;
+        flex-direction: column;
+        margin-top: 0;
+
+    }
+
+    .side-blogs {
+        width: 210px;
+        height: 176px;
+        margin-left: 21px;
+        margin-bottom: 20px;
+        background-color: #FFFFFF;
+
+    }
+
+    .bac-white {
+        border: 2px solid lightgray;
+        width: 210px;
+        height: 48px;
+        margin: 25px 0px;
+        padding: 9px 18px;
+
+    }
+
+    .bac-red {
+        width: 210px;
+        height: 48px;
+
+    }
+
+    .blogs {
+        grid-template-columns: repeat(1, 1fr);
+        margin-top: 60px;
+    }
+
+    .footer {
+        height: 412px;
+    }
+
+    .footer h1 {
+        margin-top: 24px;
+    }
+
+    .footer hr {
+        width: 90%;
+        margin-left: 20px;
+    }
+
+    .footer-span {
+        display: flex;
+        flex-direction: column;
+        font-size: 14px;
+        margin-top: 24px;
+    }
+
+    .button-div {
+        display: none;
+    }
+}
+
+/*-------------
+   Tablet device
+------------------ */
+@media only screen and (min-width:688px)and (max-width:992px) {
+
+    .container {
+        width: 100%;
+    }
+
+    /* -------------------
+    top banner responsive
+    --------------------- */
+
+    .top-banner {
+        width: 734px;
+        height: 398px;
+        margin-left: 50px;
+        margin-bottom: 50px;
+        padding-left: 50px;
+    }
+
+    .banner-info h1 {
+        font-size: 50px;
+    }
+
+
+    /* -----------------
+ Middle banner responsive
+----------------------- */
+    .middle-banner {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 0;
+
+    }
+
+    .side-blogs {
+        width: 100%;
+        height: 150px;
+        display: flex;
+        justify-content: space-between;
+        background-color: #FFFFFF;
+        padding: 7px 28px;
+
+    }
+
+    .bac-white {
+        width: 230px;
+        height: 64px;
+        border: 2px solid lightgray;
+    }
+
+    .bac-red {
+        width: 230px;
+        height: 64px;
+        margin-top: 30px;
+
+    }
+
+    .blogs {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .blog-hidden {
+        display: none;
+    }
+
+    .button-div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px auto;
+    }
+
+    .button {
+        visibility: visible;
+        background-color: #DD0000;
+        color: #FFFFFF;
+        width: 131px;
+        height: 47px;
+        text-align: center;
+        border: none;
+        border-radius: 5px;
+    }
+
+    .footer-span {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
 }
